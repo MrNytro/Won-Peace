@@ -1,0 +1,56 @@
+--------------------------------- this will update the calorie id to the calorie needed, this will be the first query always
+UPDATE Customer 
+SET Calorie_ID = 
+  CASE 
+    WHEN Sex = 'Male' THEN 
+    (CASE
+    WHEN ROUND(32.875*(Height) - 453 - 5*(Age),-2) < 1125 THEN 1000
+    WHEN ROUND(32.875*(Height) - 453 - 5*(Age),-2) BETWEEN 1125 AND 1375 THEN 1250
+    WHEN ROUND(32.875*(Height) - 453 - 5*(Age),-2) BETWEEN 1375 AND 1625 THEN 1500
+    WHEN ROUND(32.875*(Height) - 453 - 5*(Age),-2) BETWEEN 1625 AND 1875 THEN 1750
+    WHEN ROUND(32.875*(Height) - 453 - 5*(Age),-2) > 1875 THEN 2000
+    END)
+    WHEN Sex = 'Female' THEN 
+    (CASE
+    WHEN ROUND(29.475*(Height) - 446 - 5*(Age),-2) < 1125 THEN 1000
+    WHEN ROUND(29.475*(Height) - 446 - 5*(Age),-2) BETWEEN 1125 AND 1375 THEN 1250
+    WHEN ROUND(29.475*(Height) - 446 - 5*(Age),-2) BETWEEN 1375 AND 1625 THEN 1500
+    WHEN ROUND(29.475*(Height) - 446 - 5*(Age),-2) BETWEEN 1625 AND 1875 THEN 1750
+    WHEN ROUND(29.475*(Height) - 446 - 5*(Age),-2) > 1875 THEN 2000
+    END)
+  END
+WHERE Calorie_ID>0;
+
+
+------------------------------------------------------ //breakfast
+SELECT Food_Name, Servings, Calorie_per_100g
+FROM Food
+WHERE Times = 'B' AND Calorie_ID = (SELECT Calorie_ID FROM Customer WHERE Cust_ID = 1) 
+AND Allergy_ID NOT IN (SELECT Allergy_ID FROM customer_allergy WHERE Cust_ID = 1)
+AND (CASE 
+    WHEN (SELECT v_nv FROM Customer WHERE Cust_ID = 1) = 1 THEN v_nv != 2
+    ELSE 1=1
+END)
+------------------------------------------------------//lunch
+
+SELECT Food_Name, Servings, Calorie_per_100g
+FROM Food
+WHERE Times = 'L' AND RR_Count = (SELECT RR_Count FROM Customer WHERE Cust_ID = 1) 
+AND Calorie_ID = (SELECT Calorie_ID FROM Customer WHERE Cust_ID = 1) 
+AND Allergy_ID NOT IN (SELECT Allergy_ID FROM Customer_Allergy WHERE Cust_ID = 1)
+AND (CASE 
+    WHEN (SELECT v_nv FROM Customer WHERE Cust_ID = 1) = 1 THEN v_nv != 2
+    ELSE 1=1
+END)
+-----------------------------------------------------// Dinner
+SELECT Food_Name, Servings, Calorie_per_100g
+FROM Food
+WHERE Times = 'D' AND Calorie_ID = (SELECT Calorie_ID FROM Customer WHERE Cust_ID = 1) 
+AND Allergy_ID NOT IN (SELECT Allergy_ID FROM Customer_Allergy WHERE Cust_ID = 1)
+AND (CASE 
+    WHEN (SELECT v_nv FROM Customer WHERE Cust_ID = 1) = 1 THEN v_nv != 2
+    ELSE 1=1
+END)
+-----------------------------------------------------//flush table after done
+DELETE FROM Customer;
+

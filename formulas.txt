@@ -1,0 +1,52 @@
+initial calculations
+{
+Ideal weight men (kg) = (52 + 1.9 * (height - 60))*0.45359237
+Ideal weight women (kg) = (49 + 1.7 x (height - 60)) * 0.45359237
+
+calorie needed for the ideal weight for men = 66 + (6.23*2.2*((49 + 1.7 x (height - 60)) * 0.45359237)) + (12.7*12*Height)-(6.8*Age)
+calorie needed for the ideal weight of wormen= 655 + (4.35*2.2*((49 + 1.7 x (height - 60)) * 0.45359237)) + (4.7*12*Height)-(4.7*Age)
+
+men=  162.97H - 263.498- 6.8*A 
+women= 63.78H - 424.933 -4.7*A
+}
+
+***************************************************
+
+men= 66 + (6.23 x (52 + 1.9 x (height - 60)) * 0.45359237) + (12.7 x height) - (6.8 x age )
+women= 655 + (4.35 x (49 + 1.7 x (height - 60)) * 0.45359237) + (4.7 x height) - (4.7 x age)
+
+revised harry benedit formula
+men= 13.397W + 0.4H - 5.677A + 88.362 (Height in inches)
+women=  9.247W + 0.2582H - 4.330A + 447.593
+***************************************************
+
+men= 10 x W + 6.25 x (H x 2.54) - 5 x A + 5
+women= 10 x W + 6.25 x (H x 2.54) - 5 x A - 161
+
+weight 
+men = 56.2+ 1.7*(H-60)
+women= 53.1 + 1.36*(H-60)
+
+***************************************************
+FINAL CALC
+men= 56.2 + 1.41*(H-60)
+56.2 + 1.41*(H-60)+(W-56.2 + 1.41*(H-60))/3
+
+
+ men final should be==== 13.397(56.2 kg + 1.41*(H-60)) + 0.4H - 5.677A + 88.362
+
+******************************************************
+
+
+
+
+
+
+
+
+
+Final after the second calculations
+men= 10 x (56.2+ 1.7*(H-60)) + 6.25 x (H x 2.54) - 5 x A + 5
+which should be --------                  −5*(Age) + 32.875*(Height) −453
+women= 10 x (53.1 + 1.36*(H-60)) + 6.25 x (H x 2.54) - 5 x A - 161
+which should be ----------                −5*(Age) + 29.475*(Height) − 446

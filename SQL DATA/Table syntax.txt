@@ -1,0 +1,53 @@
+create database WPtempnologin;
+use WPtempnologin;
+//use the use database query everytime, else it wont work
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CREATE TABLE Allergy ( 
+    Allergy_ID INT PRIMARY KEY,
+    Allergy VARCHAR(50)
+);
+
+CREATE TABLE Customer (
+    Cust_ID INT PRIMARY KEY,
+    FName VARCHAR(50),
+    Phone VARCHAR(50),
+    Sex VARCHAR(50),
+    Age INT,
+    Height INT,
+    RR_Count INT,
+    Calorie_ID INT,
+	v_nv INT
+);
+
+CREATE TABLE Food (
+    Food_Name VARCHAR(50),
+    Calorie_per_100g INT,
+    Times CHAR,
+    Servings INT,
+    RR_count INT,
+	Calorie_ID INT,
+    Allergy_ID INT,
+	v_nv INT,
+    FOREIGN KEY (Allergy_ID) REFERENCES Allergy(Allergy_ID)
+);
+
+CREATE TABLE Customer_Allergy (
+    Cust_ID INT,
+    Allergy_ID INT,
+    FOREIGN KEY (Allergy_ID) REFERENCES Allergy(Allergy_ID),
+    FOREIGN KEY (Cust_ID) REFERENCES Allergy(Cust_ID)
+);
+
+CREATE TABLE Common_Food (
+    Commonfood_ID INT PRIMARY KEY,
+    Nutrients VARCHAR(50),
+    Servings INT,
+    Food_Name VARCHAR(50)
+);
+
+CREATE TABLE Diet_Plan (
+    Servings INT,
+    Food VARCHAR(50),
+    Calorie INT,
+    Times char
+);
