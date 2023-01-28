@@ -180,6 +180,58 @@
           </form>
 
         </div>
+        <section  body-font">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+      <img alt="feature" class="object-cover object-center h-full w-full" src="./images/sam-moghadam-khamseh-VpOpy6QrDrs-unsplash.jpg">
+    </div>
+    <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+      <h1 class="text-gray-900 text-lg title-font font-medium mb-3">Snacks</h1>
+      <div class="overflow-y-auto bg-gray-100 p-3 w-fit h-96 text-justify">
+        <table class="table-auto">
+          <thead>
+            <tr>
+              <th class="px-4 py-2">Food Name</th>
+              <th class="px-4 py-2">Servings</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php
+              // Connect to the database
+                $conn = mysqli_connect("localhost", "root", "", "wptemp1");
+            // Check for connection error
+            if (!$conn) {
+              die("Connection failed: " . mysqli_connect_error());
+            }
+            $query = "SELECT Food_Name, servings, recipes FROM common_food ";
+            $result = mysqli_query($conn, $query);
+            while($row = mysqli_fetch_assoc($result)) {
+              echo "<tr>";
+              echo "<td class='px-4 py-2 hover:underline text-blue-500' title='" . $row['recipes'] . "'>";
+              echo $row['Food_Name'];
+              echo "</td>";
+              echo "<td class='px-4 py-2'>";
+              echo $row['servings'];
+              echo "</td>";
+              echo "</tr>";
+            }
+            // Close the connection
+            mysqli_close($conn);
+          ?>
+          </tbody>
+        </table>
+    </div>
+          </div>
+    <form method="post" action="http://localhost/WP-NOLOG/About%20Page/register%20page/dashboard/downloads.php">
+            <button class="bg-white-300 hover:bg-blue-200 text-emerald-900 font-bold py-2 px-6 rounded inline-flex items-center">
+              <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
+              </svg>
+            <span>Download</span>
+            </button>
+          </form>
+</section>
+
 
       </section>
       <section class="text-gray-600 body-font">
