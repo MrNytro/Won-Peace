@@ -1,7 +1,4 @@
-////---- just to test of the query is working or not
-INSERT INTO Customer (Cust_ID, Calorie_ID, FName, Phone, Sex, Age, Height, Allergy_ID,RR_Count,v_nv)
-VALUES (1,1,'Vishal', '913568745', 'Male', 20, 70, 2,2,1);
-////
+You can just copy paste these values but remove the "--first put into Allergy" part as it will create error
 
 --first put into Allergy 
 INSERT INTO Allergy (Allergy_ID, Allergy) VALUES (0,'NO CONDITON'),(1, 'Lactose Intolerance'), 
@@ -34,7 +31,7 @@ INSERT INTO Food VALUES ('Vegetable Omellete',134,'B',2,0,1000,8,1),
 	('Onion Dosa',541,'B',1,0,1000,0,1),
 	('Plain Dosa',543,'B',1,0,1000,0,1),
 	('Set Dosa',557,'B',1,0,1000,0,1),
-	('Chicken and Egg Omelette',557,'B',1,0,1000,8,1),
+	('Chicken and Egg Omelette',557,'B',1,0,1000,8,2),
 	('Vegetable Omellete',134,'B',3,0,1250,8,1),
 	('Scrambled Eggs',155,'B',2,0,1250,8,1),
 	('Frittata',209,'B',2,0,1250,8,1),
@@ -59,7 +56,7 @@ INSERT INTO Food VALUES ('Vegetable Omellete',134,'B',2,0,1000,8,1),
 	('Onion Dosa',541,'B',1,0,1250,0,1),
 	('Plain Dosa',543,'B',1,0,1250,0,1),
 	('Set Dosa',557,'B',1,0,1250,0,1),
-	('Chicken and Egg Omelette',557,'B',1,0,1250,8,1),
+	('Chicken and Egg Omelette',557,'B',1,0,1250,8,2),
 	('Vegetable Omellete',134,'B',3,0,1500,8,1),
 	('Scrambled Eggs',155,'B',3,0,1500,8,1),
 	('Frittata',209,'B',2,0,1500,8,1),
@@ -84,7 +81,7 @@ INSERT INTO Food VALUES ('Vegetable Omellete',134,'B',2,0,1000,8,1),
 	('Onion Dosa',541,'B',1,0,1500,0,1),
 	('Plain Dosa',543,'B',1,0,1500,0,1),
 	('Set Dosa',557,'B',1,0,1500,0,1),
-	('Chicken and Egg Omelette',557,'B',1,0,1500,8,1),
+	('Chicken and Egg Omelette',557,'B',1,0,1500,8,2),
 	('Vegetable Omellete',134,'B',2,0,1750,8,1),
 	('Scrambled Eggs',155,'B',2,0,1750,8,1),
 	('Frittata',209,'B',2,0,1750,8,1),
@@ -109,7 +106,7 @@ INSERT INTO Food VALUES ('Vegetable Omellete',134,'B',2,0,1000,8,1),
 	('Onion Dosa',541,'B',1,0,1750,0,1),
 	('Plain Dosa',543,'B',1,0,1750,0,1),
 	('Set Dosa',557,'B',1,0,1750,0,1),
-	('Chicken and Egg Omelette',557,'B',1,0,1750,8,1),
+	('Chicken and Egg Omelette',557,'B',1,0,1750,8,2),
 	('Vegetable Omellete',134,'B',2,0,2000,8,1),
 	('Scrambled Eggs',155,'B',3,0,2000,8,1),
 	('Frittata',209,'B',3,0,2000,8,1),
@@ -134,7 +131,7 @@ INSERT INTO Food VALUES ('Vegetable Omellete',134,'B',2,0,1000,8,1),
 	('Onion Dosa',541,'B',1,0,2000,0,1),
 	('Plain Dosa',543,'B',1,0,2000,0,1),
 	('Set Dosa',557,'B',1,0,2000,0,1),
-	('Chicken and Egg Omelette',557,'B',1,0,2000,8,1),
+	('Chicken and Egg Omelette',557,'B',1,0,2000,8,2),
 	('Aloo Gobi',112,'L',1,1,1000,3,1),
 	('Gobi Matar',85,'L',1,1,1000,0,1),
 	('Bhindi Masala',93,'L',1,1,1000,0,1),
@@ -745,3 +742,16 @@ INSERT INTO Food VALUES ('Saag Aloo',122,'L',2,3,1000,3,1),
 	('Chicken Tikka',234,'D',2,0,2000,0,2),
 	('Vegetable Soup',44,'D',2,0,2000,0,1),
 	('Khichdi',101,'D',3,0,2000,0,1);
+
+--insert into Customer table
+
+INSERT INTO `common_food` (`Commonfood_ID`, `Food_Name`, `recipes`, `Servings`) VALUES
+(1, 'Dal Pancake', 'Rinse the lentils and soak them in 2 cups of water for at least 2 hours.\nDrain the water and grind the lentils to a smooth paste.\nIn a bowl, mix the lentil paste, grated carrot, chopped onion, cilantro, green chili, ginger-garlic paste, cumin powder, turmeric powder, and salt.\nHeat a non-stick pan on medium heat.\nPour a ladleful of the batter onto the pan and spread it evenly to make a pancake.\nCook for 2-3 minutes on one side, or until the bottom is golden brown.\nFlip the pancake and cook the other side for 2-3 minutes, or until golden brown.\nRepeat the process with the remaining batter.\nServe the pancakes hot with chutney or sauce of your choice.', 4),
+(2, 'Popcorn', 'In a medium-sized saucepan, heat the oil over medium-high heat.\r\nAdd the popcorn kernels to the pan and cover with a lid.\r\nShake the pan occasionally to prevent the kernels from burning.\r\nOnce the popcorn starts to pop, continue to shake the pan until the popping slows down.\r\nRemove the pan from the heat and remove the lid.\r\nSeason the popcorn with salt or other seasonings as desired.\r\nServe and enjoy!', 4),
+(3, 'Hummus and Veggies', 'In a food processor or blender, combine the chickpeas, garlic, tahini, lemon juice, olive oil, salt, and pepper.\r\nSlowly add the water, one tablespoon at a time, while blending the mixture until it becomes smooth and creamy.\r\nTaste and adjust the seasoning as needed.\r\nTransfer the hummus to a serving bowl and garnish with a drizzle of olive oil and a sprinkle of paprika (if desired).\r\nServe with a variety of vegetables for dipping.', 4),
+(4, 'Air-Fried Vegetable Pakora', 'In a large bowl, combine the gram flour, ginger paste, garlic paste, cumin powder, coriander powder, turmeric powder, salt, and pepper.\r\nSlowly add the water, one tablespoon at a time, while mixing the mixture until it becomes a thick batter.\r\nAdd the chopped vegetables to the batter and mix well to coat.\r\nPreheat the air fryer to 390°F.\r\nUsing a spoon or your hands, form small balls from the mixture and place them in the air fryer basket.\r\nAir fry for 10-12 minutes or until golden brown and crispy.\r\nServe with mint chutney or yogurt for dipping.', 4),
+(5, 'Fruit Smoothie', 'Add the frozen berries, banana, Greek yogurt, and almond milk to a blender.\r\nBlend until smooth.\r\nIf desired, add honey for sweetness.\r\nTaste and adjust the sweetness as needed.\r\nPour the smoothie into a glass and enjoy immediately.', 2),
+(6, 'Roasted Veggies with Quinoa', 'Preheat the oven to 375°F.\r\nRinse the quinoa in a fine mesh strainer and then cook it according to package instructions.\r\nIn a large bowl, toss the diced vegetables with olive oil, salt, and pepper.\r\nSpread the vegetables out on a baking sheet and roast for 20-25 minutes, or until tender and lightly browned.\r\nOnce the quinoa is cooked, fluff it with a fork and add it to the bowl of cooked vegetables.\r\nAdd the minced garlic and fresh herbs to the bowl, and toss to combine.\r\nServe the roasted veggies and quinoa in bowls and enjoy!', 4),
+(7, 'Roasted Masala Corn', 'Preheat the oven to 425°F.\r\nCut the corn kernels off the cob and transfer them to a baking sheet.\r\nDrizzle the corn with olive oil and toss to coat.\r\nSprinkle the chili powder, garam masala, salt, and pepper over the corn, and toss to coat evenly.\r\nRoast the corn in the preheated oven for 20-25 minutes, or until tender and lightly browned.\r\nRemove from the oven and sprinkle with chopped cilantro, if desired.\r\nServe the roasted corn as a side dish or as a topping for a salad.', 4),
+(8, 'Boiled Beans with Lemon Juice', 'Bring a pot of salted water to a boil.\r\nAdd the green beans to the boiling water and cook for 3-5 minutes, or until tender.\r\nDrain the green beans and transfer them to a bowl.\r\nDrizzle the green beans with olive oil, and toss to coat.\r\nSprinkle the green beans with salt, pepper and lemon juice.\r\nToss everything together and enjoy!', 4),
+(9, 'Baked Samosa', 'Preheat the oven to 375°F.\r\nIn a mixing bowl, combine the mashed potatoes, peas, cumin powder, coriander powder, salt and pepper. Mix well.\r\nTake one samosa wrapper and place 2 tablespoons of the mixture in the center of the wrapper.\r\nFold the wrapper over to form a triangle and seal the edges with water or egg wash.\r\nPlace the samosas on a baking sheet lined with parchment paper.\r\nDrizzle', 2);

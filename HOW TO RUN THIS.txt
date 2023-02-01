@@ -1,0 +1,28 @@
+STEP 1 DOWNLOADS---
+
+	DOWNLOAD XAMPP (https://www.apachefriends.org/download_success.html)
+
+STEP 2 phpmyadmin
+
+-Open Xampp and then start the Apache, Mysql port
+	(if you are having error just go to services app on windows, and STOP you mySQL80 port, after that you can try starting it afain it should work)
+
+-Once both Ports are Running Click on Admin in XAMPP Control Panel, this should redirect you to a phpmyadmin page on your browser
+
+--create a table named as wptemp1, and then go to the INSERT TABLE notepad and copy the code and paste it in the SQL section of create table.
+
+--insert into values, once the tables are created successfully go to the INSERT TABLE code in SQL section and copy paste the code without the (--comment)
+
+-once all the insert values are done,copy your WP_NOLOG file and paste it into C:\xampp\htdocs location if you did not mess up with the download location of the XAMPP
+
+STEP 3 running the website
+
+--go to your browser and paste this link in there (http://localhost/WP-NOLOG/about%20page/index-aboutpage.php)
+if the above steps you worked out are working perfectly.
+--make sure you put all the values in the Registration page and try to keep the values legit, you should get your plan every time if you click register.
+--after you are done downloading the plan etc from the dash board page, make sure you Click 'Home' button or the website wont work properl next time, this webiste is working on the basis of normality but I kinda messed up the concept of it, if you dont click on the HOME button you can go and flush the tables manually which is by going to the same phpmyadmin page and going to the SQL part and typing (Delete from Customer; Delete from Customer_Allergy);
+
+STEP 4
+this is my first project i have done with my friend, I should be posting more on this same github in the future, please give me your feedback on my mail (vishalab_is20.rvitm@rvei.edu.in)
+
+THANKS :)

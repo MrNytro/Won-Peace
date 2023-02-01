@@ -54,3 +54,6 @@ END)
 -----------------------------------------------------//flush table after done
 DELETE FROM Customer;
 
+
+
+USING THESE QUERY THE PHP CODE WAS WRITTEN, YOU CAN USE THESE QUERIES TO TEST OUT THE WORKING OF YOUR DATA VALUES
