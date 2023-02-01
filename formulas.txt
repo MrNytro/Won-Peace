@@ -1,3 +1,6 @@
+these are the calculations i had to do to get the forumla working for the Diet plan maker
+you guys can just flex it to your teachers hahaha
+
 initial calculations
 {
 Ideal weight men (kg) = (52 + 1.9 * (height - 60))*0.45359237
