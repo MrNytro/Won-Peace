@@ -378,20 +378,20 @@
       </div>
     </div>
 
-      <script>
-        document.querySelectorAll('.scroll-to-section').forEach(link => {
-          link.addEventListener('click', e => {
-            e.preventDefault()
-            const target = document.querySelector(link.getAttribute('href'))
-            target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            })
+    <script>
+      document.querySelectorAll('.scroll-to-section').forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault()
+          const target = document.querySelector(link.getAttribute('href'))
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
           })
         })
-      </script>
-    </body>
-  </div>
+      })
+    </script>
+  </body>
+</div>
 </div>
 
 </html>

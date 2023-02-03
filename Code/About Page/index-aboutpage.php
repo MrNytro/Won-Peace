@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
 
-    <title>Won Peace</title>
+  <title>Won Peace</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
-    <link rel="stylesheet" href="assets/css/animated.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/templatemo-chain-app-dev.css">
+  <link rel="stylesheet" href="assets/css/animated.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
 
-  </head>
+</head>
 
 <body>
 
@@ -56,11 +58,14 @@
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="#services">Services</a></li>
               <li class="scroll-to-section"><a href="#about">About</a></li>
-              <li><div class="gradient-button"><a id="modal_trigger" href="./register page/index-register.php"><i class="fa fa-sign-in-alt"></i> GET PLAN</a></div></li>
+              <li>
+                <div class="gradient-button"><a id="modal_trigger" href="./register page/index-register.php"><i
+                      class="fa fa-sign-in-alt"></i> GET PLAN</a></div>
+              </li>
 
-            </ul>        
+            </ul>
             <a class='menu-trigger'>
-                <span>Menu</span>
+              <span>Menu</span>
             </a>
             <!-- ***** Menu End ***** -->
           </nav>
@@ -78,7 +83,9 @@
                 <div class="row">
                   <div class="col-lg-12">
                     <h2>Get the best Diet plan for FREE!!</h2>
-                    <p>Welcome to our website! Here at Won Peace, we understand the importance of maintaining a healthy diet and achieving your weight loss goals. That's why we have created a comprehensive diet plan that is tailored to meet your individual needs and preferences. </p>
+                    <p>Welcome to our website! Here at Won Peace, we understand the importance of maintaining a healthy
+                      diet and achieving your weight loss goals. That's why we have created a comprehensive diet plan
+                      that is tailored to meet your individual needs and preferences. </p>
                   </div>
                   <div class="col-lg-12">
                     <div class="white-button first-button scroll-to-section">
@@ -109,7 +116,8 @@
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
             <h4>Amazing <em>Diet Plan &amp; Features</em> for you</h4>
             <img src="assets/images/heading-line-dec.png" alt="">
-            <p>Our website also offers a variety of tools and resources to help you stay on track, including meal plans, recipes.</p>
+            <p>Our website also offers a variety of tools and resources to help you stay on track, including meal plans,
+              recipes.</p>
           </div>
         </div>
       </div>
@@ -135,10 +143,11 @@
           <div class="service-item third-service">
             <div class="icon"></div>
             <h4>Auto Calculator</h4>
-            <p>No need to put your weight or BMI, our website calculates the perfect weight you should be and how much calories you need in a day and also provided the neccessary calores per meal!!</p>
+            <p>No need to put your weight or BMI, our website calculates the perfect weight you should be and how much
+              calories you need in a day and also provided the neccessary calores per meal!!</p>
           </div>
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -150,7 +159,8 @@
           <div class="section-heading">
             <h4>About <em>What We Do</em> &amp; Who We Are</h4>
             <img src="assets/images/heading-line-dec.png" alt="">
-            <p>We are students of RVITM, we made this website as a part of our DBMS project. The calorie count may not be 100% accurate, there may be an error of  ±10% </p>
+            <p>We are students of RVITM, we made this website as a part of our DBMS project. The calorie count may not
+              be 100% accurate, there may be an error of ±10% </p>
             <p>Below are Our skills and achievemenets</p>
           </div>
           <div class="row">
@@ -168,14 +178,16 @@
             </div>
             <div class="col-lg-6">
               <div class="box-item">
-                <h4><a href="#">Competetive Coding  </a></h4>
-                <p>We Individually have intermeddiate level Coding skill, you can refer to our Leetcode Rank / link from our resume </p>
+                <h4><a href="#">Competetive Coding </a></h4>
+                <p>We Individually have intermeddiate level Coding skill, you can refer to our Leetcode Rank / link from
+                  our resume </p>
               </div>
             </div>
             <div class="col-lg-6">
               <div class="box-item">
                 <h4><a>Leadership Skills</a></h4>
-                <p>Strong interpersonal skills and ability to build and maintain positive relationships with colleagues, clients, and customers</p>
+                <p>Strong interpersonal skills and ability to build and maintain positive relationships with colleagues,
+                  clients, and customers</p>
               </div>
             </div>
           </div>
@@ -197,4 +209,5 @@
   <script src="assets/js/popup.js"></script>
   <script src="assets/js/custom.js"></script>
 </body>
+
 </html>
